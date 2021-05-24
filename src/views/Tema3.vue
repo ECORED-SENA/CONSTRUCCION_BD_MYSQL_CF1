@@ -53,7 +53,7 @@
         .row.align-items-center
           .col-md-4
             figure
-              img(src='@/assets/curso/img16.svg', style="max-width: 50%; margin: auto;")
+              img(src='@/assets/curso/img31.svg', style="max-width: 50%; margin: auto;")
           .col-md-8.mb-4.mb-md-0
             p La disponibilidad de los datos puede ser restringida a ciertos usuarios. Según los privilegios que posea cada usuario de la base de datos, podrá acceder a mayor información que otros.
       div(titulo="Velocidad")

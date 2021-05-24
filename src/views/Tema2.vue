@@ -87,7 +87,7 @@
           p Definen las características de las entidades, son las propiedades de cada una. Cada entidad contiene distintos atributos que dan información sobre esta entidad, estos atributos pueden ser de distintos tipos (numéricos, texto, fecha...) en cada una de las columnas de una tabla. En un diagrama los atributos se representan con círculos que descienden de la entidad.
       .col-lg-5
         figure
-          img(src='@/assets/curso/img5.png', style="max-width: 100%; margin: auto;")
+          img(src='@/assets/curso/img29.svg', style="max-width: 100%; margin: auto;")
         figcaption Figura 1 / Atributos
     hr.mb-5
     .row.justify-content-center.mb-4
@@ -103,34 +103,11 @@
     .row.mb-5
       .col-12
         figure
-          img(src='@/assets/curso/img6.png', style="max-width: 80%; margin: auto;")
+          img(src='@/assets/curso/img30.svg', style="max-width: 80%; margin: auto;")
     hr.mb-5
     h4 Tipos de relación
     p.mb-5 #[b Según cardinalidad.] La cardinalidad se representa en un diagrama ER como una etiqueta que se ubica en ambos extremos de la línea de relación de las entidades y que puede contener diversos valores entre los que destacan comúnmente el 1 y el *, obteniendo los siguientes tipos:
-    #carouselExampleIndicators.carousel.slide.mb-5(data-bs-ride='carousel')
-      .carousel-indicators
-        button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
-        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
-        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
-      .carousel-inner
-        .carousel-item.active
-          figure
-            img(src='@/assets/curso/img7.png', alt='Texto que describa la imagen')
-            figcaption Figura 2 / Relación 1 a 1
-        .carousel-item
-          figure
-            img(src='@/assets/curso/img8.png', alt='Texto que describa la imagen')
-            figcaption Figura 3 / Relación 1 a *
-        .carousel-item
-          figure
-            img(src='@/assets/curso/img9.png', alt='Texto que describa la imagen')
-            figcaption Figura 4 / Relación * a *
-      button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
-        span.carousel-control-prev-icon(aria-hidden='true')
-        span.visually-hidden Previous
-      button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
-        span.carousel-control-next-icon(aria-hidden='true')
-        span.visually-hidden Next
+    SlyderC.mb-5(:datos="datosSlyder")
     hr.mb-5
     .row.mb-5
       .col-lg-4
@@ -152,7 +129,7 @@
     .row.mb-5
       .col-12
         figure
-          img(src='@/assets/curso/img10.png', style="max-width: 100%; margin: auto;")
+          img(src='@/assets/curso/img28.svg', style="max-width: 100%; margin: auto;")
     #t_2_2.pt-4
     .titulo-segundo
       .h4 2.2 Modelo de datos lógico
@@ -161,7 +138,7 @@
     .row.mb-5
       .col-12
         figure
-          img(src='@/assets/curso/img11.png', style="max-width: 80%; margin: auto;")
+          img(src='@/assets/curso/img26.svg', style="max-width: 80%; margin: auto;")
     #t_2_3.pt-4
     .titulo-segundo
       .h4 2.3	Modelo de datos físico
@@ -191,7 +168,7 @@
             | #[i Data Definition Language (DDL)].
       .col-lg-6.mt-4.mt-lg-0
         figure
-          img(src='@/assets/curso/img12.png', style="max-width: 80%;")
+          img(src='@/assets/curso/img27.svg', style="max-width: 80%;")
 
 </template>
 
@@ -199,7 +176,29 @@
 export default {
   name: 'Tema2',
   data: () => ({
-    // variables de vue
+    datosSlyder: [
+      {
+        titulo: 'Relación 1 a 1',
+        texto:
+          'La relación uno a uno define que un único registro de la tabla puede estar relacionado con un único registro de la tabla relacionada.',
+        imagen: require('@/assets/curso/img24.svg'),
+        leyendaImagen: 'Figura 4 / Relación 1 a 1',
+      },
+      {
+        titulo: 'Relación 1 a *',
+        texto:
+          'La relación de uno a varios define que un registro dado de una tabla auxiliar o secundaria solo puede estar vinculado con un único registro de la tabla principal con la que está relacionada.',
+        imagen: require('@/assets/curso/img25.svg'),
+        leyendaImagen: 'Figura 5 / Relación 1 a *',
+      },
+      {
+        titulo: 'Relación * a *',
+        texto:
+          'La relación de varios a varios define que un registro de una tabla puede estar relacionado con varios registros de la tabla relacionada y viceversa.',
+        imagen: require('@/assets/curso/img25.svg'),
+        leyendaImagen: 'Figura 6 / Relación * a *',
+      },
+    ],
   }),
 }
 </script>
