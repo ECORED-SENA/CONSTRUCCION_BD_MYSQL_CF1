@@ -6,9 +6,9 @@
     .titulo-principal
       .titulo-principal__numero
         .h3 2
-      .h3 Metodología de diseño de bases de datos
+      .h3 Modelos de datos
     figure.mb-5
-      img(src="@/assets/curso/img5.svg", style="max-width: 50%; margin: auto;")
+      img(src="@/assets/curso/img5.svg", style="max-width: 85%; margin: auto;")
     p.mb-4 Un modelo de datos es un conjunto de herramientas conceptuales para la descripción de los datos y las relaciones entre ellos, su semántica y las restricciones de consistencia; está compuesto por un conjunto de conceptos, reglas y convenciones que permiten describir los datos.
     p.mb-5 Por la orientación del presente programa de formación, se enfoca el estudio hacia el modelo relacional pero se recomienda la lectura de otros modelos como:
     .row.mb-5.align-items-start
@@ -88,7 +88,7 @@
       .col-lg-5
         figure
           img(src='@/assets/curso/img29.svg', style="max-width: 100%; margin: auto;")
-        figcaption Figura 1 / Atributos
+        figcaption Atributos
     hr.mb-5
     .row.justify-content-center.mb-4
       .col-5.d-flex
@@ -99,11 +99,11 @@
         .cajon.color-secundario2.p-4.mb-4
           .h5 Relación
           p Con una relación se establece qué tipo de dependencia se debe dar entre entidades, es decir, permite decir que ciertas entidades comparten ciertos atributos de manera necesaria.
-    .h4.text-center.mb-4 Relación
-    .row.mb-5
-      .col-12
+    .row.mb-5.justify-content-center
+      .col-10
         figure
-          img(src='@/assets/curso/img30.svg', style="max-width: 80%; margin: auto;")
+          img(src='@/assets/curso/img30.svg', style="max-width: 100%; margin: auto;")
+        figcaption Relación
     hr.mb-5
     h4 Tipos de relación
     p.mb-5 #[b Según cardinalidad.] La cardinalidad se representa en un diagrama ER como una etiqueta que se ubica en ambos extremos de la línea de relación de las entidades y que puede contener diversos valores entre los que destacan comúnmente el 1 y el *, obteniendo los siguientes tipos:
@@ -124,21 +124,21 @@
     #t_2_1.pt-4
     .titulo-segundo
       .h4 2.1	Modelos de datos conceptual
-    p.mb-5 Representa el modelo de datos de forma independiente del DBMS (sistema de gestión de bases de datos) que se utilizará, usa una representación gráfica para representar el diseño donde los rectángulos representan entidades, los rombos relaciones y los óvalos propiedades o atributos.
-    h4.text-center.mb-4 Modelo de datos de forma independiente
-    .row.mb-5
-      .col-12
+    p.mb-4 Representa el modelo de datos de forma independiente del DBMS (sistema de gestión de bases de datos) que se utilizará, usa una representación gráfica para representar el diseño donde los rectángulos representan entidades, los rombos relaciones y los óvalos propiedades o atributos.
+    .row.mb-5.justify-content-center
+      .col-10
         figure
           img(src='@/assets/curso/img28.svg', style="max-width: 100%; margin: auto;")
+        figcaption Modelo de datos de forma independiente
     #t_2_2.pt-4
     .titulo-segundo
       .h4 2.2 Modelo de datos lógico
-    p.mb-5 Este modelo no es específico de un motor o base de datos que describe aspectos relacionados con las necesidades de una organización para recopilar datos y las relaciones, entre estos aspectos; un modelo lógico contiene representaciones de entidades, atributos y relaciones.
-    h4.text-center.mb-4 Modelo de datos lógico
-    .row.mb-5
-      .col-12
+    p.mb-4 Este modelo no es específico de un motor o base de datos que describe aspectos relacionados con las necesidades de una organización para recopilar datos y las relaciones, entre estos aspectos; un modelo lógico contiene representaciones de entidades, atributos y relaciones.
+    .row.mb-5.justify-content-center
+      .col-10
         figure
-          img(src='@/assets/curso/img26.svg', style="max-width: 80%; margin: auto;")
+          img(src='@/assets/curso/img26.svg', style="max-width: 100%; margin: auto;")
+        figcaption Modelo de datos lógico
     #t_2_3.pt-4
     .titulo-segundo
       .h4 2.3	Modelo de datos físico
@@ -168,7 +168,8 @@
             | #[i Data Definition Language (DDL)].
       .col-lg-6.mt-4.mt-lg-0
         figure
-          img(src='@/assets/curso/img27.svg', style="max-width: 80%;")
+          img(src='@/assets/curso/img27.svg', style="max-width: 100%;")
+        figcaption Modelos de datos físicos
 
 </template>
 
@@ -182,21 +183,21 @@ export default {
         texto:
           'La relación uno a uno define que un único registro de la tabla puede estar relacionado con un único registro de la tabla relacionada.',
         imagen: require('@/assets/curso/img24.svg'),
-        leyendaImagen: 'Figura 4 / Relación 1 a 1',
+        leyendaImagen: 'Relación 1 a 1',
       },
       {
         titulo: 'Relación 1 a *',
         texto:
           'La relación de uno a varios define que un registro dado de una tabla auxiliar o secundaria solo puede estar vinculado con un único registro de la tabla principal con la que está relacionada.',
         imagen: require('@/assets/curso/img25.svg'),
-        leyendaImagen: 'Figura 5 / Relación 1 a *',
+        leyendaImagen: 'Relación 1 a *',
       },
       {
         titulo: 'Relación * a *',
         texto:
           'La relación de varios a varios define que un registro de una tabla puede estar relacionado con varios registros de la tabla relacionada y viceversa.',
         imagen: require('@/assets/curso/img25.svg'),
-        leyendaImagen: 'Figura 6 / Relación * a *',
+        leyendaImagen: 'Relación * a *',
       },
     ],
   }),

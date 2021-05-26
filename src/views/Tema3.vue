@@ -9,10 +9,13 @@
       .h3 Sistemas de gestión de bases de datos
     figure.mb-5.pt-5
       img(src="@/assets/curso/img11.svg", style="max-width: 80%; margin: auto;")
-    p.mb-5 Un gestor de base de datos o SGBD es una colección de programas, cuyo objetivo es servir de interfaz entre la base de datos, el usuario y las aplicaciones. Se compone de un lenguaje de definición de datos, de un lenguaje de manipulación de datos y de un lenguaje de consulta.
     #t_3_1.pt-4
     .titulo-segundo
-      .h4 3.1 Características
+      .h4 3.1 Introducción
+    p.mb-5 Un gestor de base de datos o SGBD es una colección de programas, cuyo objetivo es servir de interfaz entre la base de datos, el usuario y las aplicaciones. Se compone de un lenguaje de definición de datos, de un lenguaje de manipulación de datos y de un lenguaje de consulta.
+    #t_3_2.pt-4
+    .titulo-segundo
+      .h4 3.2 Características
     p.mb-5 Proveer a los administradores las herramientas que les permitan ejecutar tareas de mantenimiento y administración de los datos; algunas de sus características son:
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
       .row(titulo="Control de la redundancia de datos").align-items-center
@@ -70,18 +73,18 @@
               img(src='@/assets/curso/img18.svg', style="max-width: 50%; margin: auto;")
           .col-md-8.mb-4.mb-md-0
             p La mayoría de los sistemas DBMS están disponibles para ser instalados en múltiples plataformas de hardware.
-    #t_3_2.pt-4
+    #t_3_3.pt-4
     .titulo-segundo
-      .h4 3.2 MySQL
+      .h4 3.3 MySQL
     p.mb-4 En cuanto a la definición general, MySQL es un sistema de gestión de bases de datos relacionales de código abierto (RDBMS, por sus siglas en inglés) con un modelo cliente-servidor, cuya sigla en inglés se traslada a My Structured Query Language o lenguaje de consulta estructurado.
     p.mb-5 Código abierto significa que se puede usar y modificar con libertad, es decir, cualquiera puede instalar el software. También se puede aprender y personalizar el código fuente para que se adapte mejor a las necesidades; sin embargo, la GPL (licencia pública de GNU) determina lo que se puede hacer según las condiciones. La versión con licencia comercial está disponible si se requiere de una propiedad más flexible y un soporte avanzado.
-    .h4 Características
+    .h5 3.3.1. Características
     p.mb-4 MySQL es un sistema de base de datos relacional, lo cual quiere decir que archiva datos en tablas separadas en lugar de guardar todos los datos en un gran archivo, esto permite tener mayor velocidad y flexibilidad. Como estas tablas están relacionadas de formas definidas, se hace posible combinar distintos datos en varias tablas y conectarlos.
     p.mb-4 Cualquier persona puede utilizar MySQL y crear modificaciones descargando el código fuente con el fin de ajustarlo a su medida y para su uso, pues es un software de código abierto y se establece el GPL (General Public License) en donde se define lo que un usuario puede realizar o no con el software. Si un usuario no se ajusta a las medidas del GPL o requiere el uso del software para aplicaciones comerciales, puede comprar una versión comercial licenciada.
     .row.mb-5
       .col-lg-4
         figure
-          img(src='@/assets/curso/img19.svg', style="max-width: 80%; margin: auto;")
+          img(src='@/assets/curso/img19.svg', style="max-width: 74%; margin: auto;")
       .col-lg-8.mt-4.mt-lg-0
         p.mb-4 Algunas de sus características más importantes son:
         ol.lista-ol--cuadro
@@ -145,7 +148,7 @@
             .lista-ol--cuadro__vineta
               span 15
             | En las últimas versiones, se permiten hasta 64 índices por tablas. Cada índice puede consistir desde 1 a 16 columnas o partes de columnas. El máximo ancho de límite es de 1.000 bytes
-    .h4 Ventajas
+    .h5 3.3.2. Ventajas
     p.mb-5 A continuación, se presentan algunas de las ventajas de utilizar MySQL:
     .row.mb-5
       .col-lg-6
@@ -153,60 +156,59 @@
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img13.png', style="max-width: 10%;").me-4
-              p.mt-2 MySQL es de uso libre y gratuito.
+              img(src='@/assets/curso/img13.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 MySQL es de uso libre y gratuito.
         hr
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img14.png', style="max-width: 10%;").me-4
-              p.mt-2 Software con licencia GPL.
+              img(src='@/assets/curso/img14.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 Software con licencia GPL.
+        hr
+        .row.align-items-center
+          figure.d-flex
+              img(src='@/assets/curso/img15.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 Bajo costo en requerimientos para la elaboración y ejecución del programa.
         hr
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img15.png', style="max-width: 10%;").me-4
-              p.mt-2 Bajo costo en requerimientos para la elaboración y ejecución del programa.
+              img(src='@/assets/curso/img16.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 No se necesita disponer de hardware o software de alto rendimiento para la ejecución del programa.
         hr
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img16.png', style="max-width: 10%;").me-4
-              p.mt-2 No se necesita disponer de hardware o software de alto rendimiento para la ejecución del programa.
-        hr
-        .row.align-items-center
-          .col-12
-            figure.d-flex
-              img(src='@/assets/curso/img17.png', style="max-width: 10%;").me-4
-              p.mt-2 Velocidad al realizar las operaciones y buen rendimiento.
+              img(src='@/assets/curso/img17.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 Velocidad al realizar las operaciones y buen rendimiento.
         hr.d-none
       .col-lg-6
         hr
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img18.png', style="max-width: 10%;").me-4
-              p.mt-2 Facilidad de instalación y configuración.
+              img(src='@/assets/curso/img18.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 Facilidad de instalación y configuración.
         hr
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img19.png', style="max-width: 10%;").me-4
-              p.mt-2 Soporte en casi el 100% de los sistemas operativos actuales.
+              img(src='@/assets/curso/img19.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 Soporte en casi el 100% de los sistemas operativos actuales.
         hr
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img20.png', style="max-width: 10%;").me-4
-              p.mt-2 Entorno con seguridad y encriptación.
+              img(src='@/assets/curso/img20.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 Entorno con seguridad y encriptación.
         hr
         .row.align-items-center
           .col-12
             figure.d-flex
-              img(src='@/assets/curso/img21.png', style="max-width: 10%;").me-4
-              p.mt-2 Baja probabilidad de corrupción de datos.
+              img(src='@/assets/curso/img21.png', style="max-width: 30px; height: 30px;").me-4
+              p.mt-1 Baja probabilidad de corrupción de datos.
         hr
-    h4 Modelo cliente servidor
+    h5 3.3.3. Modelo cliente servidor
     p.mb-4 La arquitectura cliente servidor tiene dos partes claramente diferenciadas, por un lado, la parte del servidor y por otro de cliente o grupo de clientes donde lo habitual es que un servidor sea una máquina bastante potente con un hardware y software específicos que actúan como depósito de datos y funcione a manera de un sistema gestor de base de datos o aplicaciones.
     p.mb-4 En esta arquitectura los clientes suelen ser estaciones de trabajo que solicitan varios servicios al servidor, mientras que un servidor es una máquina que actúa como depósito de datos y funciona como un sistema gestor de base de datos, este se encarga de dar la respuesta demandada por el cliente.
     p.mb-5 Para entender este modelo se nombrarán y definirán algunos conceptos básicos que lo conforman.
@@ -240,9 +242,11 @@
           .col-9.col-lg-10
             p #[b Protocolo]
             p Conjunto de normas o reglas y pasos establecidos de manera clara y concreta sobre el flujo de información en una red estructurada.
-    h4.text-center.pt-4.mb-4  Modelo cliente servidor
-    figure
-      img(src='@/assets/curso/img22.png', style="max-width: 80%; margin: auto;")
+    .row.justify-content-center
+      .col-10
+        figure
+          img(src='@/assets/curso/img22.png', style="max-width: 100%; margin: auto;")
+        figcaption Modelo cliente servidor
 
 </template>
 
