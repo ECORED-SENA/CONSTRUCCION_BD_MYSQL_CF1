@@ -135,7 +135,7 @@
       .h4 2.2 Modelo de datos lógico
     p.mb-5 Este modelo no es específico de un motor o base de datos que describe aspectos relacionados con las necesidades de una organización para recopilar datos y las relaciones, entre estos aspectos; un modelo lógico contiene representaciones de entidades, atributos y relaciones.
     .row.mb-5.justify-content-center
-      .col-lg-8
+      .col-lg-6
         figure
           img(src='@/assets/curso/img26.svg', style="max-width: 100%; margin: auto;")
         figcaption Modelo de datos lógico
