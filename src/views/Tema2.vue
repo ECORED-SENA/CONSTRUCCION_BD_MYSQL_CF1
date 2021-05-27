@@ -126,23 +126,23 @@
       .h4 2.1	Modelos de datos conceptual
     p.mb-4 Representa el modelo de datos de forma independiente del DBMS (sistema de gestión de bases de datos) que se utilizará, usa una representación gráfica para representar el diseño donde los rectángulos representan entidades, los rombos relaciones y los óvalos propiedades o atributos.
     .row.mb-5.justify-content-center
-      .col-10
+      .col-lg-10
         figure
           img(src='@/assets/curso/img28.svg', style="max-width: 100%; margin: auto;")
         figcaption Modelo de datos de forma independiente
     #t_2_2.pt-4
     .titulo-segundo
       .h4 2.2 Modelo de datos lógico
-    p.mb-4 Este modelo no es específico de un motor o base de datos que describe aspectos relacionados con las necesidades de una organización para recopilar datos y las relaciones, entre estos aspectos; un modelo lógico contiene representaciones de entidades, atributos y relaciones.
+    p.mb-5 Este modelo no es específico de un motor o base de datos que describe aspectos relacionados con las necesidades de una organización para recopilar datos y las relaciones, entre estos aspectos; un modelo lógico contiene representaciones de entidades, atributos y relaciones.
     .row.mb-5.justify-content-center
-      .col-10
+      .col-lg-8
         figure
           img(src='@/assets/curso/img26.svg', style="max-width: 100%; margin: auto;")
         figcaption Modelo de datos lógico
     #t_2_3.pt-4
     .titulo-segundo
       .h4 2.3	Modelo de datos físico
-    p.mb-4 El paso de un modelo lógico a uno físico requiere de un profundo entendimiento del manejador de bases de datos que se desea emplear, incluyendo características como:
+    p.mb-5 El paso de un modelo lógico a uno físico requiere de un profundo entendimiento del manejador de bases de datos que se desea emplear, incluyendo características como:
     .row
       .col-lg-6
         ol.lista-ol--cuadro
@@ -169,7 +169,7 @@
       .col-lg-6.mt-4.mt-lg-0
         figure
           img(src='@/assets/curso/img27.svg', style="max-width: 100%;")
-        figcaption Modelos de datos físicos
+        figcaption Modelos de datos físico
 
 </template>
 
@@ -179,23 +179,20 @@ export default {
   data: () => ({
     datosSlyder: [
       {
-        titulo: 'Relación 1 a 1',
         texto:
-          'La relación uno a uno define que un único registro de la tabla puede estar relacionado con un único registro de la tabla relacionada.',
+          '<b>Relación 1 a 1.</b> La relación uno a uno define que un único registro de la tabla puede estar relacionado con un único registro de la tabla relacionada.',
         imagen: require('@/assets/curso/img24.svg'),
         leyendaImagen: 'Relación 1 a 1',
       },
       {
-        titulo: 'Relación 1 a *',
         texto:
-          'La relación de uno a varios define que un registro dado de una tabla auxiliar o secundaria solo puede estar vinculado con un único registro de la tabla principal con la que está relacionada.',
+          '<b>Relación 1 a *.</b> La relación de uno a varios define que un registro dado de una tabla auxiliar o secundaria solo puede estar vinculado con un único registro de la tabla principal con la que está relacionada.',
         imagen: require('@/assets/curso/img25.svg'),
         leyendaImagen: 'Relación 1 a *',
       },
       {
-        titulo: 'Relación * a *',
         texto:
-          'La relación de varios a varios define que un registro de una tabla puede estar relacionado con varios registros de la tabla relacionada y viceversa.',
+          '<b>Relación * a *.</b> La relación de varios a varios define que un registro de una tabla puede estar relacionado con varios registros de la tabla relacionada y viceversa.',
         imagen: require('@/assets/curso/img25.svg'),
         leyendaImagen: 'Relación * a *',
       },

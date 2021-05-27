@@ -95,7 +95,7 @@ export default {
           },
           {
             icono: 'far fa-file-alt',
-            numero: '3.2',
+            numero: '3.3',
             titulo: 'MySQL',
             hash: 't_3_3',
           },
@@ -189,7 +189,7 @@ export default {
         cargo: 'Soporte organizacional',
       },
       {
-        nombre: 'Yuly Rey',
+        nombre: ['Daniel Ricardo Mutis Gómez', 'Yuly Rey'],
         cargo: 'Diseño web',
       },
       {
@@ -204,8 +204,8 @@ export default {
         cargo: 'Producción audiovisual',
       },
       {
-        nombre: 'Daniel Ricardo Mutis Gómez',
-        cargo: 'Desarrollo Front-End',
+        nombre: 'Jhana Johanna Bustillo Ardila',
+        cargo: 'Revisora de contenidos',
       },
       {
         centro: 'Centro industrial del diseño y la manufactura',
