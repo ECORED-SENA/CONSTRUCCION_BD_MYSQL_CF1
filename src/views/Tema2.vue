@@ -121,7 +121,7 @@
             img(src="@/assets/template/icono-link.svg")
           .anexo__texto
             p #[b Video.] HTML Rules (2019, septiembre 21). Diseño de bases de datos relacionales.
-    #t_2_1.pt-4
+    #t_2_1.pt-5
     .titulo-segundo
       .h4 2.1	Modelos de datos conceptual
     p.mb-4 Representa el modelo de datos de forma independiente del DBMS (sistema de gestión de bases de datos) que se utilizará, usa una representación gráfica para representar el diseño donde los rectángulos representan entidades, los rombos relaciones y los óvalos propiedades o atributos.
