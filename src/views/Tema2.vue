@@ -187,7 +187,7 @@ export default {
       {
         texto:
           '<b>Relación 1 a *.</b> La relación de uno a varios define que un registro dado de una tabla auxiliar o secundaria solo puede estar vinculado con un único registro de la tabla principal con la que está relacionada.',
-        imagen: require('@/assets/curso/img25.svg'),
+        imagen: require('@/assets/curso/img25A.svg'),
         leyendaImagen: 'Relación 1 a *',
       },
       {
